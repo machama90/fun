@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page page--access active" id="accessPage">
+    <div class="panel panel--access">
+      <h1>Insere a nossa data especial ❤️</h1>
+      <div class="input-row">
+        <input type="date" id="specialDate" aria-label="Data especial" />
+        <button id="enterButton" type="button">Entrar</button>
+      </div>
+      <p class="message" id="accessMessage">Uma viagem de emoção começa quando descobrimos a data certa.</p>
+    </div>
+  </div>
+
+  <div class="page page--main" id="mainPage">
+    <div class="main-bg">
+      <div class="stars"></div>
+      <div class="stars stars--small"></div>
+      <div class="glow"></div>
+    </div>
+    <div class="content">
+      <div class="heart-container">
+        <div class="heart"></div>
+      </div>
+      <div class="message-box">
+        <p class="typewriter" id="primaryText"></p>
+        <button id="heartButton" class="button button--secondary">Clica aqui ❤️</button>
+        <div class="hidden" id="afterClick">
+          <p class="slow-text">Não és apenas parte dos meus dias…<br />és a calma que os organiza,<br />a beleza que os ilumina,<br />e o sentimento raro que não se explica, apenas se vive.</p>
+          <p class="slow-text">Se o tempo parasse por um instante…<br />seria neste pensamento:<br />eu, a pensar em ti.</p>
+          <button id="finalButton" class="button button--primary">Aceitas continuar esta história comigo?</button>
+        </div>
+        <p class="final-message" id="finalMessage"></p>
+      </div>
+    </div>
+    <div class="floating-hearts" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="magic-hearts" id="magicHearts" aria-hidden="true"></div>
+  </div>
+
+  <div class="page page--final" id="finalPage">
+    <div class="main-bg">
+      <div class="stars"></div>
+      <div class="stars stars--small"></div>
+      <div class="glow"></div>
+    </div>
+    <div class="content">
+      <div class="heart-container">
+        <div class="heart"></div>
+      </div>
+      <div class="message-box">
+        <p class="final-love-text" id="finalLoveText">Beijinhos mi amor, te amooo...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
